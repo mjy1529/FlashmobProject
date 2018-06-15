@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.flashmob_team.usr.flashmob_project.Main.SearchFragment">
+
+    <RelativeLayout
+        android:id="@+id/searchLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/search_border"
+        android:backgroundTint="@null"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="8dp">
+
+        <EditText
+            android:id="@+id/searchEt"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp" />
+
+        <ImageView
+            android:id="@+id/search_icon"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/searchEt"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@+id/searchEt"
+            android:src="@drawable/search" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/search_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchLayout"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="15dp"
+        android:divider="@null"
+        android:scrollbars="none" />
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="15dp">
+
+    <TextView
+        android:id="@+id/sign_loca_recycler_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="text"
+        android:textSize="18dp"
+        android:textColor="#ffffff"
+        android:elevation="12dp"
+        android:layout_centerInParent="true"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:background="@color/colorBack"
+        android:id="@+id/sign_loca_recycler_imageView"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"/>
+
+</RelativeLayout>

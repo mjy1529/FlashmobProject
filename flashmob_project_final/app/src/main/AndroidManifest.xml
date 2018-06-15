@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.flashmob_team.usr.flashmob_project">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!-- 인터넷 접근 권한 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- 갤러리 접근 권한 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.STORAGE" />
+
+    <application
+        android:name=".Application.ApplicationController"
+        android:allowBackup="true"
+        android:icon="@mipmap/flash"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+        android:name="com.google.android.geo.API_KEY"
+        android:value="AIzaSyDs0zpkiTN_ycG0q5b-R1QOAYxRrxA3Ph8"/>
+
+        <activity android:name=".Login.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Flashmob.CreateFlashmob" />
+        <activity
+            android:name=".Flashmob.InfoActivity"
+            android:label="@string/title_activity_info"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Login.SplashActivity" />
+        <activity android:name=".Main.MainViewActivity" />
+        <activity android:name=".SignUp.SignUpActivity" />
+        <activity android:name=".SignUp.SignCategoryActivity" />
+        <activity android:name=".SignUp.SignLocationActivity"/>
+        <activity android:name=".Chat.Chat"
+            android:windowSoftInputMode="adjustPan"
+        />
+    </application>
+
+</manifest>

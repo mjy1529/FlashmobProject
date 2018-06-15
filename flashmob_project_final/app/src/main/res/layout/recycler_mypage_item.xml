@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/mypageLine"
+        android:background="#ffe312"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <RelativeLayout
+        android:id="@+id/mypage_parent"
+        android:layout_below="@+id/mypageLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/heart"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:src="@drawable/heart" />
+
+        <LinearLayout
+            android:id="@+id/join_data_layout"
+            android:layout_width="226dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/heart"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/join_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="TITLE"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/join_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="DATE" />
+
+            <TextView
+                android:id="@+id/join_place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PLACE" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+

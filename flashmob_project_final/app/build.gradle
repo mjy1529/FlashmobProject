@@ -1,0 +1,78 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
+
+    defaultConfig {
+        applicationId "com.flashmob_team.usr.flashmob_project"
+        minSdkVersion 21
+        targetSdkVersion 26
+        useLibrary 'org.apache.http.legacy'
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    implementation 'com.android.support:support-v4:26.1.0'
+
+    configurations.all {
+        resolutionStrategy {
+            force 'com.android.support:support-v4:26.1.0'
+        }}
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.roughike:bottom-bar:2.3.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.1'
+    androidTestImplementation 'junit:junit:4.12'
+    implementation 'com.github.gigamole.slideimageview:library:1.1.4'
+    implementation('com.github.bumptech.glide:glide:4.7.1') {
+        exclude group: 'com.android.support'
+    }
+    implementation 'com.android.support:support-fragment:26.1.0'
+
+    //numberpicker 라이브러리
+    implementation 'com.github.travijuu:numberpicker:1.0.7'
+    //권한 받아오기 라이브러리
+    implementation 'gun0912.ted:tedpermission:2.0.0'
+    //구글맵
+    implementation 'com.google.android.gms:play-services:11.8.0'
+
+    //multidex
+    implementation 'com.android.support:multidex:1.0.3'
+
+    //좋아요 라이브러리
+    implementation 'com.github.jd-alexander:LikeButton:0.2.3'
+    //dialog
+    implementation 'com.github.andyxialm:ColorDialog:1.0.0'
+
+    // 서버 통신 retrofit2
+    implementation 'com.squareup.retrofit2:retrofit:2.0.2'
+    implementation 'com.squareup.retrofit2:converter-gson:2.0.2'
+
+    //recyclerview
+    implementation 'com.android.support:recyclerview-v7:26.1.0'
+
+    //circle image View
+    implementation 'de.hdodenhof:circleimageview:2.0.0'
+
+    //firebase
+    implementation 'com.google.firebase:firebase-core:11.8.0'
+    implementation 'com.google.firebase:firebase-database:11.8.0'
+}
+//firebase
+apply plugin: 'com.google.gms.google-services'

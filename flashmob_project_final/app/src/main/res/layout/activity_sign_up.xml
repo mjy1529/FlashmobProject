@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".SignUp.SignUpActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Account"
+        android:textColor="@color/colorAccentText"
+        android:textStyle="bold"
+        android:textSize="19dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/title_text"
+        />
+
+    <Button
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_camera_button"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/signup_camera_button"/>
+
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="11dp"
+        android:elevation="12dp"
+        android:layout_below="@+id/title_text"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/signup_imageView"/>
+
+    <Button
+        android:layout_below="@+id/signup_camera_button"
+        android:layout_alignRight="@+id/signup_email_editText"
+        android:textColor="@color/colorNormalText"
+        android:textSize="13dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E-mail Check"
+        android:background="@android:color/transparent"
+        android:textAllCaps="false"/>
+
+
+    <EditText
+        android:singleLine="true"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/signup_camera_button"
+        android:layout_centerHorizontal="true"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:hint="E-mail"
+        android:textSize="13dp"
+        android:id="@+id/signup_email_editText"
+        android:backgroundTint="@color/colorLightBack"
+        />
+
+    <EditText
+        android:singleLine="true"
+        android:layout_below="@+id/signup_email_editText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:textSize="13dp"
+        android:id="@+id/signup_pw_editText"
+        android:backgroundTint="@color/colorLightBack"
+        />
+
+    <EditText
+        android:singleLine="true"
+        android:layout_below="@+id/signup_pw_editText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:hint="Password Confirm"
+        android:textSize="13dp"
+        android:id="@+id/signup_pw_confirm_editText"
+        android:backgroundTint="@color/colorLightBack"
+        />
+
+    <EditText
+        android:singleLine="true"
+        android:layout_below="@+id/signup_pw_confirm_editText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:textSize="13dp"
+        android:id="@+id/signup_name_editText"
+        android:backgroundTint="@color/colorLightBack"
+        />
+
+    <EditText
+        android:singleLine="true"
+        android:layout_below="@+id/signup_name_editText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:hint="Phone"
+        android:textSize="13dp"
+        android:id="@+id/signup_phone_editText"
+        android:backgroundTint="@color/colorLightBack"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/signup_phone_editText"
+        android:id="@+id/signup_linearLayout">
+
+        <EditText
+            android:singleLine="true"
+            android:backgroundTint="@color/colorLightBack"
+            android:id="@+id/signup_age_editText"
+            android:textSize="13dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:hint="Age"/>
+
+        <Button
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/signup_man_button"
+            android:background="@drawable/man"
+            android:layout_marginRight="20dp"/>
+
+        <Button
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/woman"
+            android:id="@+id/signup_woman_button"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_below="@+id/signup_linearLayout"
+        android:text="Sign Up"
+        android:textAllCaps="false"
+        android:textSize="15dp"
+        android:textColor="@color/colorAccentText"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/sign_up_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_corner_button"/>
+
+</RelativeLayout>

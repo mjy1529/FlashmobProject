@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.flashmob_team.usr.flashmob_project.Main.UserFragment">
+
+    <RelativeLayout
+        android:id="@+id/userInfo"
+        android:layout_width="match_parent"
+        android:layout_height="210dp">
+
+        <ImageView
+            android:id="@+id/userIv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/leader" />
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/userIv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Irene"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/userAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/userName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="20" />
+
+        <TextView
+            android:id="@+id/userSex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/userAge"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="female" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/joinText"
+        android:background="@drawable/mypage_jointext_border"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userInfo"
+        android:layout_marginLeft="15dp"
+        android:text="참여 예정 모임" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/mypageRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/joinText"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" />
+
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login.LoginActivity">
+
+    <ImageView
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@null"
+        android:src="@drawable/flash"
+        tools:background="@color/colorBack"
+        android:id="@+id/login_logo_image"
+        />
+
+    <EditText
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/login_logo_image"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:hint="E-mail"
+        android:textSize="13dp"
+        android:id="@+id/login_email_editText"
+        android:backgroundTint="@color/colorLightBack"
+        />
+
+    <EditText
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/login_email_editText"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:textSize="13dp"
+        android:id="@+id/login_pw_editText"
+        android:backgroundTint="@color/colorLightBack"
+        />
+
+    <Button
+        android:text="Log In"
+        android:textSize="15dp"
+        android:textColor="@color/colorAccentText"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/login_button"
+        android:layout_below="@id/login_pw_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_corner_button"/>
+
+
+    <Button
+        android:id="@+id/login_signup_button"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don’t have an account? Sign Up"
+        android:textSize="14dp"
+        android:background="@android:color/transparent"
+        android:textColor="@color/colorAccentText"
+        android:textAllCaps="false"/>
+
+
+</RelativeLayout>

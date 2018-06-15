@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp">
+
+    <ImageView
+        android:id="@+id/flash_icon"
+        android:src="@drawable/flash_1"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_centerVertical="true"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_toRightOf="@+id/flash_icon"
+        android:textStyle="bold"
+        android:text="[서울] 같이 볼링칩시당!!"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"/>
+
+</RelativeLayout>

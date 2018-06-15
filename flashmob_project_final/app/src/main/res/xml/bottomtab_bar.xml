@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <tabs>
+        <tab
+            id="@+id/tab_home"
+            icon="@drawable/home_gray"
+            title = "home"
+
+            />
+
+        <tab
+            id = "@+id/tab_like"
+            icon="@drawable/heart_gray"
+            title = "like"
+            />
+        <tab
+            id = "@+id/tab_chat"
+            icon="@drawable/chat_gray"
+            title = "chat"
+            />
+        <tab
+            id = "@+id/tab_search"
+            icon="@drawable/search_gray"
+            title = "search"
+            />
+        <tab
+            id = "@+id/tab_user"
+            icon="@drawable/user_gray"
+            title = "user"
+            />
+    </tabs>
+</PreferenceScreen>

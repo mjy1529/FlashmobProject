@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="tag_post">
+        <attr name="tag_name" fromat="reference|string"/>
+        <attr name="tag_image" format="reference|string" />
+        <attr name="tag_title" format="reference|string" />
+        <attr name="tag_content" format="reference|string" />
+
+    </declare-styleable>
+</resources>
